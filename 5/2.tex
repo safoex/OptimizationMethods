@@ -44,4 +44,50 @@ $$\min_Z -\left<Z,G \right> \rightarrow \min -2 Z_{3,3} $$
 $$Z \succeq 0, Z_{2,2} = 0 \Rightarrow Z_{1,2} = 0 \Rightarrow Z_{3,3} = \frac{1}{2} \Rightarrow $$
 $$ \Rightarrow \min -2 Z_{3,3} = -1 $$
 This result differs from $0$ for primal problem. That proofs that strong duality fails to hold in this problem.
+
+\section{Problem 4}
+\subsection{Equivalent LP program and its dual}
+\begin{gather*}
+\min_{x \in \mathbb{R}^n} t, \\
+ a_i^\top x + b_i -t \leq 0 , i=1..m 
+\end{gather*}
+Dual problem: 
+\begin{gather*}
+\mathcal{L}\left(x,t,\lambda\right) = \left(1 - \sum_i \lambda_i\right) t +  \lambda^\top A x +  \lambda^\top b,\\
+\min_{x,t} \mathcal{L} \rightarrow \\
+\sum \lambda_i = 1,\\
+\lambda^\top A = 0
+\end{gather*}
+And dual problem is
+\begin{gather*}
+\max \lambda^\top b, \\
+\text{subject to} \\
+\lambda \geq 0, \\
+\lambda^\top A = 0, \\
+\sum_i \lambda_i = 0
+\end{gather*}
+\subsection{log function}
+\begin{gather*}
+\min_{x \in \mathcal{R}^n} f_2(x) = \frac{1}{\alpha}\log\left( \sum_{i=1}^m \exp^{\alpha y_i} \right), \\
+-y_i + a_i^\top x + b_i = 0
+\end{gather*}
+Dual:
+\begin{gather*}
+\mathcal{L}\left(x,y,\nu\right) = \frac{1}{\alpha}\log\left( \sum_{i=1}^m \exp^{\alpha y_i} \right)  + \sum_i \nu_i \left(- y_i + a_i^\top x + b_i\right),\\ \Rightarrow
+\frac{\exp^{\alpha y_i}}{\sum_i \exp^{\alpha y_i}} - \nu_i = 0,
+\nu^\top A = 0
+\end{gather*}
+Than, we have
+\begin{gather*}
+\sum_i \nu_i = 1, \\
+y_i = \frac{1}{\alpha} \log \nu_i
+\end{gather*}
+(last was guessed by substitiuon). And dual problem is
+\begin{gather*}
+\max \nu^\top b - \sum_i\frac{\nu_i}{\alpha} \log \nu_i, \\
+\text{subject to} \\
+\nu^\top A = 0, \\
+\sum_i \nu_i = 1
+\end{gather*}
+
 \end{document}

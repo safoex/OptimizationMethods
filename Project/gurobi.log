@@ -84,3 +84,89 @@ Solution count 1: 210500
 
 Optimal solution found (tolerance 1.00e-04)
 Best objective 2.105000000000e+05, best bound 2.105000000000e+05, gap 0.0000%
+Optimize a model with 0 rows, 3 columns and 0 nonzeros
+Model has 1 quadratic constraint
+Variable types: 0 continuous, 3 integer (3 binary)
+Coefficient statistics:
+  Matrix range     [0e+00, 0e+00]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [0e+00, 0e+00]
+  QRHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 0
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+Optimize a model with 0 rows, 3 columns and 0 nonzeros
+Model has 1 quadratic constraint
+Variable types: 0 continuous, 3 integer (3 binary)
+Coefficient statistics:
+  Matrix range     [0e+00, 0e+00]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [0e+00, 0e+00]
+  QRHS range       [1e+00, 1e+00]
+Found heuristic solution: objective -0
+Modified 2 Q diagonals
+Presolve removed 0 rows and 1 columns
+Presolve time: 0.00s
+Presolved: 0 rows, 2 columns, 0 nonzeros
+Found heuristic solution: objective 1.0000000
+Variable types: 0 continuous, 2 integer (2 binary)
+
+Root relaxation: objective 3.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       2.0000000    2.00000  0.00%     -    0s
+
+Explored 0 nodes (1 simplex iterations) in 0.05 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 2 1 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.000000000000e+00, best bound 2.000000000000e+00, gap 0.0000%
+Optimize a model with 0 rows, 3 columns and 0 nonzeros
+Model has 1 quadratic constraint
+Variable types: 0 continuous, 3 integer (3 binary)
+Coefficient statistics:
+  Matrix range     [0e+00, 0e+00]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [0e+00, 0e+00]
+  QRHS range       [1e+00, 1e+00]
+Found heuristic solution: objective -0
+Modified 2 Q diagonals
+Presolve removed 0 rows and 1 columns
+Presolve time: 0.00s
+Presolved: 0 rows, 2 columns, 0 nonzeros
+Found heuristic solution: objective 1.0000000
+Variable types: 0 continuous, 2 integer (2 binary)
+
+Root relaxation: objective 3.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       2.0000000    2.00000  0.00%     -    0s
+
+Explored 0 nodes (1 simplex iterations) in 0.04 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 2 1 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.000000000000e+00, best bound 2.000000000000e+00, gap 0.0000%

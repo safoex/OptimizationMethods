@@ -1354,83 +1354,206 @@ Solution count 0
 
 Model is infeasible
 Best objective -, best bound -, gap -
-
-Gurobi 7.5.1 (win64, Python) logging started 12/25/17 21:48:39
-
-Optimize a model with 5967 rows, 27021 columns and 3281115 nonzeros
+Optimize a model with 5970 rows, 27021 columns and 2400915 nonzeros
 Variable types: 0 continuous, 27021 integer (27021 binary)
 Coefficient statistics:
   Matrix range     [1e+00, 1e+00]
   Objective range  [1e+00, 1e+00]
   Bounds range     [1e+00, 1e+00]
-  RHS range        [1e+00, 1e+00]
+  RHS range        [1e+00, 5e+00]
 Presolve removed 0 rows and 27000 columns
-Presolve time: 0.56s
+Presolve time: 0.51s
 
-Explored 0 nodes (0 simplex iterations) in 1.12 seconds
+Explored 0 nodes (0 simplex iterations) in 1.40 seconds
 Thread count was 1 (of 4 available processors)
 
 Solution count 0
 
 Model is infeasible
 Best objective -, best bound -, gap -
-
-    Variable            x 
--------------------------
-
-Gurobi 7.5.1 (win64, Python) logging started 12/25/17 21:50:17
-
-Optimize a model with 567 rows, 27021 columns and 532515 nonzeros
+Optimize a model with 570 rows, 27021 columns and 559515 nonzeros
 Variable types: 0 continuous, 27021 integer (27021 binary)
 Coefficient statistics:
   Matrix range     [1e+00, 1e+00]
   Objective range  [1e+00, 1e+00]
   Bounds range     [1e+00, 1e+00]
-  RHS range        [1e+00, 1e+00]
-Found heuristic solution: objective -0
-Presolve added 90 rows and 0 columns
+  RHS range        [1e+00, 5e+00]
+Presolve added 87 rows and 0 columns
 Presolve removed 0 rows and 20970 columns
-Presolve time: 0.52s
+Presolve time: 0.82s
 Presolved: 657 rows, 6051 columns, 58587 nonzeros
 Variable types: 0 continuous, 6051 integer (5871 binary)
+Found heuristic solution: objective 1.0000000
 
-Root relaxation: objective 3.000000e+00, 506 iterations, 0.07 seconds
+Root relaxation: objective 3.000000e+00, 341 iterations, 0.07 seconds
 
     Nodes    |    Current Node    |     Objective Bounds      |     Work
  Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
 
-     0     0    3.00000    0  115   -0.00000    3.00000      -     -    0s
-H    0     0                       2.0000000    3.00000  50.0%     -    1s
-H    0     0                       3.0000000    3.00000  0.00%     -    1s
+*    0     0               0       3.0000000    3.00000  0.00%     -    1s
 
-Explored 1 nodes (1995 simplex iterations) in 1.06 seconds
+Explored 0 nodes (1556 simplex iterations) in 1.35 seconds
 Thread count was 4 (of 4 available processors)
 
-Solution count 3: 3 2 -0 
+Solution count 2: 3 1 
 
 Optimal solution found (tolerance 1.00e-04)
 Best objective 3.000000000000e+00, best bound 3.000000000000e+00, gap 0.0000%
 
     Variable            x 
 -------------------------
-x[0,1,2,0,0,2]            1 
-x[1,1,1,2,1,3]            1 
-x[2,1,0,0,2,0]            1 
-x[3,2,0,2,0,1]            1 
-x[4,0,3,3,0,3]            1 
-x[5,0,2,5,1,2]            1 
-x[6,1,0,5,3,2]            1 
-x[7,2,1,3,1,2]            1 
-x[8,0,2,4,2,3]            1 
-x[9,0,1,0,3,3]            1 
-x[10,2,2,3,2,0]            1 
-x[11,1,3,5,4,3]            1 
-x[12,0,0,3,4,2]            1 
-x[13,2,4,1,3,2]            1 
-x[14,2,4,5,4,1]            1 
-     pi[0,3]            1 
-     pi[1,5]            1 
-     pi[2,0]            1 
+x[0,0,2,3,0,1]            1 
+x[1,1,3,5,0,2]            1 
+x[2,0,1,1,1,2]            1 
+x[3,1,1,5,1,1]            1 
+x[4,2,0,2,0,1]            1 
+x[5,1,0,5,2,3]            1 
+x[6,2,0,4,1,2]            1 
+x[7,0,0,1,2,3]            1 
+x[8,2,1,0,2,3]            1 
+x[9,0,3,3,3,3]            1 
+x[10,2,2,4,3,0]            1 
+x[11,2,1,3,4,2]            1 
+x[12,1,1,2,3,3]            1 
+x[13,0,1,4,4,0]            1 
+x[14,1,2,1,4,2]            1 
+     pi[0,5]            1 
+     pi[1,2]            1 
+     pi[2,1]            1 
+       xi[0]            1 
+       xi[1]            1 
+       xi[2]            1 
+Optimize a model with 5970 rows, 27021 columns and 1040115 nonzeros
+Variable types: 0 continuous, 27021 integer (27021 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 5e+00]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R631 by 1.000000000
+
+Presolve removed 0 rows and 27000 columns
+Presolve time: 0.17s
+
+Explored 0 nodes (0 simplex iterations) in 0.58 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Optimize a model with 5682 rows, 27021 columns and 1038675 nonzeros
+Variable types: 0 continuous, 27021 integer (27021 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 5e+00]
+Presolve removed 4137 rows and 22257 columns
+Presolve time: 0.95s
+Presolved: 1545 rows, 4764 columns, 52290 nonzeros
+Variable types: 0 continuous, 4764 integer (4629 binary)
+
+Root relaxation: infeasible, 108 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    1s
+
+Explored 0 nodes (108 simplex iterations) in 1.48 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Optimize a model with 1578 rows, 27021 columns and 1018155 nonzeros
+Variable types: 0 continuous, 27021 integer (27021 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 5e+00]
+Presolve added 87 rows and 0 columns
+Presolve removed 0 rows and 17514 columns
+Presolve time: 1.44s
+Presolved: 1665 rows, 9507 columns, 179727 nonzeros
+Variable types: 0 continuous, 9507 integer (9327 binary)
+Found heuristic solution: objective -0.0000000
+
+Root relaxation: objective 3.000000e+00, 467 iterations, 0.08 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       3.0000000    3.00000  0.00%     -    2s
+
+Explored 0 nodes (1886 simplex iterations) in 2.28 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 3 -0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.000000000000e+00, best bound 3.000000000000e+00, gap 0.0000%
+Optimize a model with 4602 rows, 27021 columns and 3301275 nonzeros
+Variable types: 0 continuous, 27021 integer (27021 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 5e+00]
+Presolve removed 2937 rows and 17514 columns
+Presolve time: 4.32s
+Presolved: 1665 rows, 9507 columns, 350367 nonzeros
+Variable types: 0 continuous, 9507 integer (9327 binary)
+Found heuristic solution: objective 1.0000000
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+     219    2.9999990e+00   9.570833e+01   0.000000e+00      5s
+     373    3.0000000e+00   0.000000e+00   0.000000e+00      5s
+
+Root relaxation: objective 3.000000e+00, 373 iterations, 0.10 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    3.00000    0   78    1.00000    3.00000   200%     -    5s
+H    0     0                       2.0000000    3.00000  50.0%     -    6s
+H    0     0                       3.0000000    3.00000  0.00%     -    6s
+
+Explored 1 nodes (2414 simplex iterations) in 6.17 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 3: 3 2 1 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.000000000000e+00, best bound 3.000000000000e+00, gap 0.0000%
+
+    Variable            x 
+-------------------------
+x[0,1,0,0,0,0]            1 
+x[1,0,1,1,0,2]            1 
+x[2,2,4,0,0,3]            1 
+x[3,2,2,3,1,1]            1 
+x[4,2,1,2,2,0]            1 
+x[5,2,0,3,3,3]            1 
+x[6,1,4,3,1,0]            1 
+x[7,0,2,5,1,3]            1 
+x[8,2,3,3,4,2]            1 
+x[9,1,2,2,2,2]            1 
+x[10,0,1,0,2,2]            1 
+x[11,1,1,5,3,1]            1 
+x[12,1,0,1,4,0]            1 
+x[13,0,0,2,3,1]            1 
+x[14,0,0,4,4,1]            1 
+     pi[0,4]            1 
+     pi[1,3]            1 
+     pi[2,4]            1 
        xi[0]            1 
        xi[1]            1 
        xi[2]            1 

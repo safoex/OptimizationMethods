@@ -2246,3 +2246,1008 @@ H 1450  1137                      50.0000000   28.00000  44.0%   173 1521s
   1682  1317   28.00000   17  249   50.00000   28.00000  44.0%   334 2881s
   1686  1320   28.00000   17  181   50.00000   28.00000  44.0%   335 2919s
   1690  1322   28.00000   18  247   50.00000   28.00000  44.0%   335 2958s
+
+Gurobi 7.5.1 (win64, Python) logging started 12/26/17 01:34:49
+
+
+Gurobi 7.5.1 (win64, Python) logging started 12/26/17 01:35:50
+
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 6808 rows, 8526 columns and 610395 nonzeros
+Model has 49392 quadratic objective terms
+Variable types: 0 continuous, 8526 integer (8526 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [4e+00, 6e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 5e+00]
+Sparsify removed 544365 nonzeros (92%)
+Presolve removed 997 rows and 738 columns
+Presolve time: 1.65s
+Presolved: 55119 rows, 57096 columns, 197325 nonzeros
+Variable types: 0 continuous, 57096 integer (56658 binary)
+
+Root relaxation: objective 2.800000e+01, 5495 iterations, 2.09 seconds
+Total elapsed time = 6.04s
+Total elapsed time = 10.15s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   28.00000    0  313          -   28.00000      -     -   10s
+     0     0   28.00000    0  482          -   28.00000      -     -   12s
+     0     0   28.00000    0  551          -   28.00000      -     -   12s
+H    0     0                      83.0000000   28.00000  66.3%     -   28s
+     0     0   28.00000    0  248   83.00000   28.00000  66.3%     -   28s
+H    0     0                      81.0000000   28.00000  65.4%     -   80s
+H    0     0                      77.0000000   28.00000  63.6%     -   80s
+     0     0   28.00000    0  352   77.00000   28.00000  63.6%     -   80s
+     0     0   28.00000    0  250   77.00000   28.00000  63.6%     -   94s
+     0     0   28.00000    0  328   77.00000   28.00000  63.6%     -  100s
+
+Cutting planes:
+  Implied bound: 1
+  Clique: 15
+  MIR: 5
+  Zero half: 24
+
+Explored 1 nodes (79164 simplex iterations) in 100.06 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 3: 77 81 83 
+
+Time limit reached
+Best objective 7.700000000000e+01, best bound 2.800000000000e+01, gap 63.6364%
+
+    Variable            x 
+-------------------------
+x[0,0,0,1,0]            1 
+x[1,2,4,1,2]            1 
+x[2,1,3,3,3]            1 
+x[3,2,3,5,2]            1 
+x[4,1,4,3,0]            1 
+x[5,2,2,5,1]            1 
+x[6,0,1,5,2]            1 
+x[7,0,2,4,3]            1 
+x[8,0,4,5,0]            1 
+x[9,1,0,1,0]            1 
+x[10,0,3,1,0]            1 
+x[11,2,1,2,0]            1 
+x[12,1,1,2,1]            1 
+x[13,1,2,5,2]            1 
+x[14,2,0,2,3]            1 
+  y[0,0,0,0]            1 
+  y[1,2,4,0]            1 
+  y[2,1,3,0]            1 
+  y[3,2,3,1]            1 
+  y[4,1,4,1]            1 
+  y[5,2,2,2]            1 
+  y[6,0,1,1]            1 
+  y[7,0,2,2]            1 
+  y[8,0,4,3]            1 
+  y[9,1,0,2]            1 
+ y[10,0,3,4]            1 
+ y[11,2,1,3]            1 
+ y[12,1,1,3]            1 
+ y[13,1,2,4]            1 
+ y[14,2,0,4]            1 
+     pi[0,0]            1 
+     pi[1,2]            1 
+     pi[2,3]            1 
+       xi[0]            1 
+       xi[1]            1 
+       xi[2]            1 
+  f[0,0,0,0]            1 
+  f[1,2,4,2]            1 
+  f[2,1,3,3]            1 
+  f[3,2,3,2]            1 
+  f[4,1,4,0]            1 
+  f[5,2,2,1]            1 
+  f[6,0,1,2]            1 
+  f[7,0,2,3]            1 
+  f[8,0,4,0]            1 
+  f[9,1,0,0]            1 
+ f[10,0,3,0]            1 
+ f[11,2,1,0]            1 
+ f[12,1,1,1]            1 
+ f[13,1,2,2]            1 
+ f[14,2,0,3]            1 
+     km[0,1]            1 
+     km[1,1]            1 
+     km[2,3]            1 
+     km[3,5]            1 
+     km[4,3]            1 
+     km[5,5]            1 
+     km[6,5]            1 
+     km[7,4]            1 
+     km[8,5]            1 
+     km[9,1]            1 
+    km[10,1]            1 
+    km[11,2]            1 
+    km[12,2]            1 
+    km[13,5]            1 
+    km[14,2]            1 
+  f[0,0,0,0]            1 
+  f[1,2,4,2]            1 
+  f[2,1,3,3]            1 
+  f[3,2,3,2]            1 
+  f[4,1,4,0]            1 
+  f[5,2,2,1]            1 
+  f[6,0,1,2]            1 
+  f[7,0,2,3]            1 
+  f[8,0,4,0]            1 
+  f[9,1,0,0]            1 
+ f[10,0,3,0]            1 
+ f[11,2,1,0]            1 
+ f[12,1,1,1]            1 
+ f[13,1,2,2]            1 
+ f[14,2,0,3]            1 
+     km[0,1]            1 
+     km[1,1]            1 
+     km[2,3]            1 
+     km[3,5]            1 
+     km[4,3]            1 
+     km[5,5]            1 
+     km[6,5]            1 
+     km[7,4]            1 
+     km[8,5]            1 
+     km[9,1]            1 
+    km[10,1]            1 
+    km[11,2]            1 
+    km[12,2]            1 
+    km[13,5]            1 
+    km[14,2]            1 
+
+Gurobi 7.5.1 (win64, Python) logging started 12/26/17 01:45:27
+
+Changed value of parameter TimeLimit to 300.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 5818 rows, 7536 columns and 598605 nonzeros
+Model has 1 quadratic constraint
+Variable types: 0 continuous, 7536 integer (7536 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [2e+00, 3e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 5e+00]
+  QRHS range       [2e+02, 2e+02]
+Sparsify removed 540252 nonzeros (91%)
+Modified 984 Q diagonals
+Presolve added 0 rows and 354 columns
+Presolve removed 100 rows and 0 columns
+Presolve time: 1.36s
+Presolved: 5718 rows, 7890 columns, 53403 nonzeros
+Variable types: 0 continuous, 7890 integer (7458 binary)
+
+Root relaxation: objective 3.000000e+00, 5603 iterations, 1.34 seconds
+Total elapsed time = 5.17s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    3.00000    0  201          -    3.00000      -     -    5s
+     0     0    3.00000    0  405          -    3.00000      -     -    6s
+     0     0    3.00000    0  470          -    3.00000      -     -    6s
+     0     0    3.00000    0  180          -    3.00000      -     -    9s
+     0     0    3.00000    0  366          -    3.00000      -     -    9s
+     0     0    3.00000    0   39          -    3.00000      -     -   12s
+     0     0    3.00000    0   79          -    3.00000      -     -   12s
+     0     0    3.00000    0   30          -    3.00000      -     -   14s
+     0     0    3.00000    0  391          -    3.00000      -     -   14s
+*    0     0               0       3.0000000    3.00000  0.00%     -   16s
+
+Cutting planes:
+  Implied bound: 4
+  Clique: 11
+  MIR: 12
+  Zero half: 10
+
+Explored 1 nodes (59726 simplex iterations) in 16.16 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 3 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.000000000000e+00, best bound 3.000000000000e+00, gap 0.0000%
+
+    Variable            x 
+-------------------------
+x[0,1,2,0,1]            1 
+x[1,2,3,1,2]            1 
+x[2,0,4,1,3]            1 
+x[3,2,0,1,3]            1 
+x[4,2,1,1,3]            1 
+x[5,0,0,0,1]            1 
+x[6,1,3,3,3]            1 
+x[7,2,2,1,0]            1 
+x[8,2,4,3,1]            1 
+x[9,0,1,4,2]            1 
+x[10,0,2,4,3]            1 
+x[11,0,4,4,0]            1 
+x[12,1,0,4,2]            1 
+x[13,1,1,0,1]            1 
+x[14,1,2,3,1]            1 
+  y[0,1,2,0]            1 
+  y[1,2,3,0]            1 
+  y[2,0,4,0]            1 
+  y[3,2,0,1]            1 
+  y[4,2,1,2]            1 
+  y[5,0,0,1]            1 
+  y[6,1,3,1]            1 
+  y[7,2,2,3]            1 
+  y[8,2,4,4]            1 
+  y[9,0,1,2]            1 
+ y[10,0,2,3]            1 
+ y[11,0,4,4]            1 
+ y[12,1,0,2]            1 
+ y[13,1,1,3]            1 
+ y[14,1,2,4]            1 
+     pi[0,1]            1 
+     pi[1,2]            1 
+     pi[2,1]            1 
+       xi[0]            1 
+       xi[1]            1 
+       xi[2]            1 
+  f[0,1,2,1]            1 
+  f[1,2,3,2]            1 
+  f[2,0,4,3]            1 
+  f[3,2,0,3]            1 
+  f[4,2,1,3]            1 
+  f[5,0,0,1]            1 
+  f[6,1,3,3]            1 
+  f[7,2,2,0]            1 
+  f[8,2,4,1]            1 
+  f[9,0,1,2]            1 
+ f[10,0,2,3]            1 
+ f[11,0,4,0]            1 
+ f[12,1,0,2]            1 
+ f[13,1,1,1]            1 
+ f[14,1,2,1]            1 
+     km[0,0]            1 
+     km[1,1]            1 
+     km[2,1]            1 
+     km[3,1]            1 
+     km[4,1]            1 
+     km[5,0]            1 
+     km[6,3]            1 
+     km[7,1]            1 
+     km[8,3]            1 
+     km[9,4]            1 
+    km[10,4]            1 
+    km[11,4]            1 
+    km[12,4]            1 
+    km[13,0]            1 
+    km[14,3]            1 
+
+Gurobi 7.5.1 (win64, Python) logging started 12/26/17 01:45:48
+
+Changed value of parameter TimeLimit to 300.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 5818 rows, 7536 columns and 598605 nonzeros
+Model has 49392 quadratic objective terms
+Variable types: 0 continuous, 7536 integer (7536 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [4e+00, 6e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 5e+00]
+Sparsify removed 540252 nonzeros (91%)
+Presolve added 0 rows and 354 columns
+Presolve removed 100 rows and 0 columns
+Presolve time: 1.40s
+Presolved: 55026 rows, 57198 columns, 201327 nonzeros
+Variable types: 0 continuous, 57198 integer (56766 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+    6899    2.2000040e+01   8.360577e+02   0.000000e+00      5s
+    8083    2.8000000e+01   0.000000e+00   0.000000e+00      6s
+
+Root relaxation: objective 2.800000e+01, 8083 iterations, 4.37 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   28.00000    0  643          -   28.00000      -     -   14s
+     0     0   28.00000    0  675          -   28.00000      -     -   17s
+     0     0   28.00000    0  448          -   28.00000      -     -   48s
+H    0     0                      74.0000000   28.00000  62.2%     -   74s
+H    0     0                      64.0000000   28.00000  56.2%     -   74s
+     0     0   28.00000    0  346   64.00000   28.00000  56.2%     -   74s
+
+Gurobi 7.5.1 (win64, Python) logging started 12/26/17 01:50:10
+
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 7834 rows, 7536 columns and 600621 nonzeros
+Model has 49392 quadratic objective terms
+Variable types: 0 continuous, 7536 integer (7536 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [4e+00, 6e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 5e+00]
+Sparsify removed 546540 nonzeros (92%)
+Presolve added 0 rows and 354 columns
+Presolve removed 100 rows and 0 columns
+Presolve time: 1.51s
+Presolved: 57042 rows, 57198 columns, 197055 nonzeros
+Variable types: 0 continuous, 57198 integer (56808 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+    7304    2.8000038e+01   3.452239e+03   0.000000e+00      5s
+   11635    2.8000000e+01   0.000000e+00   0.000000e+00      9s
+
+Root relaxation: objective 2.800000e+01, 11635 iterations, 7.55 seconds
+Total elapsed time = 15.14s
+Total elapsed time = 27.01s
+Total elapsed time = 41.40s
+Total elapsed time = 47.27s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   28.00000    0  487          -   28.00000      -     -   53s
+     0     0   28.00000    0  574          -   28.00000      -     -   58s
+     0     0   28.00000    0  520          -   28.00000      -     -   59s
+
+Gurobi 7.5.1 (win64, Python) logging started 12/26/17 01:51:33
+
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 8266 rows, 7536 columns and 601053 nonzeros
+Model has 49392 quadratic objective terms
+Variable types: 0 continuous, 7536 integer (7536 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [4e+00, 6e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 5e+00]
+Sparsify removed 456531 nonzeros (91%)
+Presolve removed 835 rows and 291 columns
+Presolve time: 1.38s
+Presolved: 51369 rows, 51183 columns, 179547 nonzeros
+Variable types: 0 continuous, 51183 integer (50823 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+    7781    2.8000043e+01   9.626305e+03   0.000000e+00      5s
+   10270    2.8000000e+01   0.000000e+00   0.000000e+00      7s
+
+Root relaxation: objective 2.800000e+01, 10270 iterations, 5.57 seconds
+Total elapsed time = 11.76s
+Total elapsed time = 19.07s
+Total elapsed time = 24.89s
+Total elapsed time = 31.37s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   28.00000    0  392          -   28.00000      -     -   36s
+     0     0   28.00000    0  392          -   28.00000      -     -   40s
+     0     0   28.00000    0  366          -   28.00000      -     -   40s
+H    0     0                      78.0000000   28.00000  64.1%     -   68s
+H    0     0                      74.0000000   28.00000  62.2%     -   68s
+     0     0   28.00000    0  320   74.00000   28.00000  62.2%     -   68s
+
+Cutting planes:
+  Implied bound: 2
+  Clique: 6
+  MIR: 3
+  Zero half: 4
+
+Explored 1 nodes (78139 simplex iterations) in 100.06 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 74 78 
+
+Time limit reached
+Best objective 7.400000000000e+01, best bound 2.800000000000e+01, gap 62.1622%
+
+    Variable            x 
+-------------------------
+x[0,0,3,0,0]            1 
+x[1,0,3,3,0]            1 
+x[2,1,0,0,0]            1 
+x[3,1,1,0,1]            1 
+x[4,2,4,0,3]            1 
+x[5,2,0,2,3]            1 
+x[6,0,2,5,3]            1 
+x[7,0,1,3,2]            1 
+x[8,2,1,2,0]            1 
+x[9,2,2,2,1]            1 
+x[10,2,4,2,0]            1 
+x[11,1,2,4,2]            1 
+x[12,0,0,3,1]            1 
+x[13,1,4,3,0]            1 
+x[14,1,3,1,3]            1 
+  y[0,0,3,0]            1 
+  y[1,0,3,1]            1 
+  y[2,1,0,0]            1 
+  y[3,1,1,1]            1 
+  y[4,2,4,0]            1 
+  y[5,2,0,1]            1 
+  y[6,0,2,2]            1 
+  y[7,0,1,3]            1 
+  y[8,2,1,2]            1 
+  y[9,2,2,3]            1 
+ y[10,2,4,4]            1 
+ y[11,1,2,2]            1 
+ y[12,0,0,4]            1 
+ y[13,1,4,3]            1 
+ y[14,1,3,4]            1 
+     pi[0,3]            1 
+     pi[1,0]            1 
+     pi[2,1]            1 
+       xi[0]            1 
+       xi[1]            1 
+       xi[2]            1 
+  f[0,0,3,0]            1 
+  f[1,0,3,0]            1 
+  f[2,1,0,0]            1 
+  f[3,1,1,1]            1 
+  f[4,2,4,3]            1 
+  f[5,2,0,3]            1 
+  f[6,0,2,3]            1 
+  f[7,0,1,2]            1 
+  f[8,2,1,0]            1 
+  f[9,2,2,1]            1 
+ f[10,2,4,0]            1 
+ f[11,1,2,2]            1 
+ f[12,0,0,1]            1 
+ f[13,1,4,0]            1 
+ f[14,1,3,3]            1 
+     km[0,0]            1 
+     km[1,3]            1 
+     km[2,0]            1 
+     km[3,0]            1 
+     km[4,0]            1 
+     km[5,2]            1 
+     km[6,5]            1 
+     km[7,3]            1 
+     km[8,2]            1 
+     km[9,2]            1 
+    km[10,2]            1 
+    km[11,4]            1 
+    km[12,3]            1 
+    km[13,3]            1 
+    km[14,1]            1 
+
+Gurobi 7.5.1 (win64, Python) logging started 12/26/17 01:53:44
+
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 8266 rows, 7536 columns and 601053 nonzeros
+Model has 49392 quadratic objective terms
+Variable types: 0 continuous, 7536 integer (7536 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [4e+00, 5e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 5e+00]
+Sparsify removed 456531 nonzeros (91%)
+Presolve removed 835 rows and 291 columns
+Presolve time: 1.48s
+Presolved: 51369 rows, 51183 columns, 179547 nonzeros
+Variable types: 0 continuous, 51183 integer (50823 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+    7649    2.8000042e+01   2.972771e+04   0.000000e+00      5s
+   10378    2.8000000e+01   0.000000e+00   0.000000e+00      7s
+
+Root relaxation: objective 2.800000e+01, 10378 iterations, 5.67 seconds
+Total elapsed time = 11.96s
+Total elapsed time = 20.32s
+Total elapsed time = 25.18s
+Total elapsed time = 30.16s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   28.00000    0  378          -   28.00000      -     -   34s
+     0     0   28.00000    0  508          -   28.00000      -     -   39s
+     0     0   28.00000    0  511          -   28.00000      -     -   40s
+H    0     0                      74.0000000   28.00000  62.2%     -   94s
+H    0     0                      70.0000000   28.00000  60.0%     -   94s
+     0     0   28.00000    0  364   70.00000   28.00000  60.0%     -   94s
+
+Cutting planes:
+  Implied bound: 4
+  Clique: 6
+  MIR: 3
+  GUB cover: 1
+  Zero half: 1
+
+Explored 1 nodes (101683 simplex iterations) in 100.10 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 70 74 
+
+Time limit reached
+Best objective 7.000000000000e+01, best bound 2.800000000000e+01, gap 60.0000%
+
+    Variable            x 
+-------------------------
+x[0,1,0,0,0]            1 
+x[1,2,1,3,0]            1 
+x[2,0,0,1,1]            1 
+x[3,0,2,4,3]            1 
+x[4,0,1,4,2]            1 
+x[5,1,3,4,3]            1 
+x[6,2,4,4,1]            1 
+x[7,2,2,5,1]            1 
+x[8,1,0,2,0]            1 
+x[9,0,0,3,1]            1 
+x[10,1,1,0,1]            1 
+x[11,1,2,0,2]            1 
+x[12,0,4,0,2]            1 
+x[13,2,1,1,0]            1 
+x[14,2,0,4,3]            1 
+  y[0,1,0,0]            1 
+  y[1,2,1,0]            1 
+  y[2,0,0,0]            1 
+  y[3,0,2,1]            1 
+  y[4,0,1,2]            1 
+  y[5,1,3,1]            1 
+  y[6,2,4,1]            1 
+  y[7,2,2,2]            1 
+  y[8,1,0,2]            1 
+  y[9,0,0,3]            1 
+ y[10,1,1,3]            1 
+ y[11,1,2,4]            1 
+ y[12,0,4,4]            1 
+ y[13,2,1,3]            1 
+ y[14,2,0,4]            1 
+     pi[0,4]            1 
+     pi[1,2]            1 
+     pi[2,3]            1 
+       xi[0]            1 
+       xi[1]            1 
+       xi[2]            1 
+  f[0,1,0,0]            1 
+  f[1,2,1,0]            1 
+  f[2,0,0,1]            1 
+  f[3,0,2,3]            1 
+  f[4,0,1,2]            1 
+  f[5,1,3,3]            1 
+  f[6,2,4,1]            1 
+  f[7,2,2,1]            1 
+  f[8,1,0,0]            1 
+  f[9,0,0,1]            1 
+ f[10,1,1,1]            1 
+ f[11,1,2,2]            1 
+ f[12,0,4,2]            1 
+ f[13,2,1,0]            1 
+ f[14,2,0,3]            1 
+     km[0,0]            1 
+     km[1,3]            1 
+     km[2,1]            1 
+     km[3,4]            1 
+     km[4,4]            1 
+     km[5,4]            1 
+     km[6,4]            1 
+     km[7,5]            1 
+     km[8,2]            1 
+     km[9,3]            1 
+    km[10,0]            1 
+    km[11,0]            1 
+    km[12,0]            1 
+    km[13,1]            1 
+    km[14,4]            1 
+Parameter TimeLimit unchanged
+   Value: 100.0  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 8266 rows, 7536 columns and 601053 nonzeros
+Model has 49392 quadratic objective terms
+Variable types: 0 continuous, 7536 integer (7536 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [4e+00, 5e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 5e+00]
+Presolved: 51369 rows, 51183 columns, 179547 nonzeros
+
+Continuing optimization...
+
+H    1     2                      67.0000000   28.00000  58.2%   0.0  177s
+     2     4   28.00000    1  417   67.00000   28.00000  58.2%  9269  201s
+
+Cutting planes:
+  Gomory: 1
+  Implied bound: 4
+  Clique: 6
+  MIR: 3
+  GUB cover: 1
+  Zero half: 2
+
+Explored 4 nodes (126291 simplex iterations) in 101.62 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 3: 67 70 74 
+
+Time limit reached
+Best objective 6.700000000000e+01, best bound 2.800000000000e+01, gap 58.2090%
+
+Gurobi 7.5.1 (win64, Python) logging started 12/26/17 02:03:06
+
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 8266 rows, 7536 columns and 601053 nonzeros
+Model has 49392 quadratic objective terms
+Variable types: 0 continuous, 7536 integer (7536 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [4e+00, 5e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 5e+00]
+Sparsify removed 456531 nonzeros (91%)
+Presolve removed 835 rows and 291 columns
+Presolve time: 2.32s
+Presolved: 51369 rows, 51183 columns, 179547 nonzeros
+Variable types: 0 continuous, 51183 integer (50823 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+    4481    2.2000023e+01   5.580125e+02   0.000000e+00      5s
+    8441    2.8000049e+01   3.149078e+03   0.000000e+00     10s
+   10378    2.8000000e+01   0.000000e+00   0.000000e+00     13s
+
+Root relaxation: objective 2.800000e+01, 10378 iterations, 10.41 seconds
+Total elapsed time = 20.95s
+Total elapsed time = 35.00s
+Total elapsed time = 43.80s
+Total elapsed time = 53.11s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   28.00000    0  378          -   28.00000      -     -   60s
+     0     0   28.00000    0  508          -   28.00000      -     -   70s
+     0     0   28.00000    0  511          -   28.00000      -     -   73s
+     0     0   28.00000    0  509          -   28.00000      -     -  100s
+
+Cutting planes:
+  Gomory: 1
+  Implied bound: 5
+  Clique: 11
+  MIR: 5
+  GUB cover: 2
+  Zero half: 20
+
+Explored 1 nodes (65646 simplex iterations) in 100.12 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 2.800000000000e+01, gap -
+
+    Variable            x 
+-------------------------
+
+    Variable            x 
+-------------------------
+
+Gurobi 7.5.1 (win64, Python) logging started 12/26/17 02:07:55
+
+Changed value of parameter TimeLimit to 200.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 8266 rows, 7536 columns and 601053 nonzeros
+Model has 49392 quadratic objective terms
+Variable types: 0 continuous, 7536 integer (7536 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [4e+00, 5e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 5e+00]
+Sparsify removed 456531 nonzeros (91%)
+Presolve removed 835 rows and 291 columns
+Presolve time: 1.50s
+Presolved: 51369 rows, 51183 columns, 179547 nonzeros
+Variable types: 0 continuous, 51183 integer (50823 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+    7517    2.6000041e+01   6.546969e+03   0.000000e+00      5s
+   10378    2.8000000e+01   0.000000e+00   0.000000e+00      8s
+
+Root relaxation: objective 2.800000e+01, 10378 iterations, 5.77 seconds
+Total elapsed time = 12.03s
+Total elapsed time = 22.27s
+Total elapsed time = 32.34s
+Total elapsed time = 42.17s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   28.00000    0  378          -   28.00000      -     -   50s
+     0     0   28.00000    0  508          -   28.00000      -     -   62s
+     0     0   28.00000    0  511          -   28.00000      -     -   64s
+H    0     0                      74.0000000   28.00000  62.2%     -  123s
+H    0     0                      70.0000000   28.00000  60.0%     -  123s
+     0     0   28.00000    0  364   70.00000   28.00000  60.0%     -  123s
+
+Cutting planes:
+  Implied bound: 4
+  Clique: 6
+  MIR: 3
+  GUB cover: 1
+  Zero half: 1
+
+Explored 1 nodes (101683 simplex iterations) in 200.08 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 70 74 
+
+Time limit reached
+Best objective 7.000000000000e+01, best bound 2.800000000000e+01, gap 60.0000%
+
+    Variable            x 
+-------------------------
+x[0,1,0,0,0]            1 
+x[1,2,1,3,0]            1 
+x[2,0,0,1,1]            1 
+x[3,0,2,4,3]            1 
+x[4,0,1,4,2]            1 
+x[5,1,3,4,3]            1 
+x[6,2,4,4,1]            1 
+x[7,2,2,5,1]            1 
+x[8,1,0,2,0]            1 
+x[9,0,0,3,1]            1 
+x[10,1,1,0,1]            1 
+x[11,1,2,0,2]            1 
+x[12,0,4,0,2]            1 
+x[13,2,1,1,0]            1 
+x[14,2,0,4,3]            1 
+  y[0,1,0,0]            1 
+  y[1,2,1,0]            1 
+  y[2,0,0,0]            1 
+  y[3,0,2,1]            1 
+  y[4,0,1,2]            1 
+  y[5,1,3,1]            1 
+  y[6,2,4,1]            1 
+  y[7,2,2,2]            1 
+  y[8,1,0,2]            1 
+  y[9,0,0,3]            1 
+ y[10,1,1,3]            1 
+ y[11,1,2,4]            1 
+ y[12,0,4,4]            1 
+ y[13,2,1,3]            1 
+ y[14,2,0,4]            1 
+     pi[0,4]            1 
+     pi[1,2]            1 
+     pi[2,3]            1 
+       xi[0]            1 
+       xi[1]            1 
+       xi[2]            1 
+  f[0,1,0,0]            1 
+  f[1,2,1,0]            1 
+  f[2,0,0,1]            1 
+  f[3,0,2,3]            1 
+  f[4,0,1,2]            1 
+  f[5,1,3,3]            1 
+  f[6,2,4,1]            1 
+  f[7,2,2,1]            1 
+  f[8,1,0,0]            1 
+  f[9,0,0,1]            1 
+ f[10,1,1,1]            1 
+ f[11,1,2,2]            1 
+ f[12,0,4,2]            1 
+ f[13,2,1,0]            1 
+ f[14,2,0,3]            1 
+     km[0,0]            1 
+     km[1,3]            1 
+     km[2,1]            1 
+     km[3,4]            1 
+     km[4,4]            1 
+     km[5,4]            1 
+     km[6,4]            1 
+     km[7,5]            1 
+     km[8,2]            1 
+     km[9,3]            1 
+    km[10,0]            1 
+    km[11,0]            1 
+    km[12,0]            1 
+    km[13,1]            1 
+    km[14,4]            1 
+
+Gurobi 7.5.1 (win64, Python) logging started 12/26/17 02:14:48
+
+Changed value of parameter TimeLimit to 200.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 8266 rows, 7536 columns and 601053 nonzeros
+Model has 49392 quadratic objective terms
+Variable types: 0 continuous, 7536 integer (7536 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [4e+00, 5e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 5e+00]
+Sparsify removed 456531 nonzeros (91%)
+Presolve removed 835 rows and 291 columns
+Presolve time: 2.24s
+Presolved: 51369 rows, 51183 columns, 179547 nonzeros
+Variable types: 0 continuous, 51183 integer (50823 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+    4745    2.2000024e+01   2.012115e+02   0.000000e+00      5s
+    8969    2.8000052e+01   2.152073e+03   0.000000e+00     10s
+   10378    2.8000000e+01   0.000000e+00   0.000000e+00     12s
+
+Root relaxation: objective 2.800000e+01, 10378 iterations, 9.73 seconds
+Total elapsed time = 20.21s
+Total elapsed time = 34.43s
+Total elapsed time = 42.69s
+Total elapsed time = 51.36s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   28.00000    0  378          -   28.00000      -     -   60s
+     0     0   28.00000    0  508          -   28.00000      -     -   67s
+     0     0   28.00000    0  511          -   28.00000      -     -   68s
+H    0     0                      74.0000000   28.00000  62.2%     -  153s
+H    0     0                      70.0000000   28.00000  60.0%     -  153s
+     0     0   28.00000    0  364   70.00000   28.00000  60.0%     -  153s
+
+Cutting planes:
+  Implied bound: 4
+  Clique: 6
+  MIR: 3
+  GUB cover: 1
+  Zero half: 1
+
+Explored 1 nodes (101683 simplex iterations) in 200.05 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 70 74 
+
+Time limit reached
+Best objective 7.000000000000e+01, best bound 2.800000000000e+01, gap 60.0000%
+
+    Variable            x 
+-------------------------
+x[0,1,0,0,0]            1 
+x[1,2,1,3,0]            1 
+x[2,0,0,1,1]            1 
+x[3,0,2,4,3]            1 
+x[4,0,1,4,2]            1 
+x[5,1,3,4,3]            1 
+x[6,2,4,4,1]            1 
+x[7,2,2,5,1]            1 
+x[8,1,0,2,0]            1 
+x[9,0,0,3,1]            1 
+x[10,1,1,0,1]            1 
+x[11,1,2,0,2]            1 
+x[12,0,4,0,2]            1 
+x[13,2,1,1,0]            1 
+x[14,2,0,4,3]            1 
+  y[0,1,0,0]            1 
+  y[1,2,1,0]            1 
+  y[2,0,0,0]            1 
+  y[3,0,2,1]            1 
+  y[4,0,1,2]            1 
+  y[5,1,3,1]            1 
+  y[6,2,4,1]            1 
+  y[7,2,2,2]            1 
+  y[8,1,0,2]            1 
+  y[9,0,0,3]            1 
+ y[10,1,1,3]            1 
+ y[11,1,2,4]            1 
+ y[12,0,4,4]            1 
+ y[13,2,1,3]            1 
+ y[14,2,0,4]            1 
+     pi[0,4]            1 
+     pi[1,2]            1 
+     pi[2,3]            1 
+       xi[0]            1 
+       xi[1]            1 
+       xi[2]            1 
+  f[0,1,0,0]            1 
+  f[1,2,1,0]            1 
+  f[2,0,0,1]            1 
+  f[3,0,2,3]            1 
+  f[4,0,1,2]            1 
+  f[5,1,3,3]            1 
+  f[6,2,4,1]            1 
+  f[7,2,2,1]            1 
+  f[8,1,0,0]            1 
+  f[9,0,0,1]            1 
+ f[10,1,1,1]            1 
+ f[11,1,2,2]            1 
+ f[12,0,4,2]            1 
+ f[13,2,1,0]            1 
+ f[14,2,0,3]            1 
+     km[0,0]            1 
+     km[1,3]            1 
+     km[2,1]            1 
+     km[3,4]            1 
+     km[4,4]            1 
+     km[5,4]            1 
+     km[6,4]            1 
+     km[7,5]            1 
+     km[8,2]            1 
+     km[9,3]            1 
+    km[10,0]            1 
+    km[11,0]            1 
+    km[12,0]            1 
+    km[13,1]            1 
+    km[14,4]            1 
+
+Gurobi 7.5.1 (win64, Python) logging started 12/26/17 02:24:32
+
+Changed value of parameter TimeLimit to 200.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 8266 rows, 7536 columns and 601053 nonzeros
+Model has 49518 quadratic objective terms
+Variable types: 0 continuous, 7536 integer (7536 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [6e+00, 2e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 5e+00]
+Sparsify removed 456597 nonzeros (90%)
+Presolve removed 829 rows and 285 columns
+Presolve time: 1.84s
+Presolved: 51585 rows, 51399 columns, 180477 nonzeros
+Variable types: 0 continuous, 51399 integer (51039 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+    5356    2.8465649e-05   3.508419e+04   0.000000e+00      5s
+    9839    0.0000000e+00   0.000000e+00   0.000000e+00     10s
+
+Root relaxation: objective 0.000000e+00, 9839 iterations, 7.81 seconds
+Total elapsed time = 14.96s
+Total elapsed time = 32.07s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  694          -    0.00000      -     -   39s
+     0     0    0.00000    0  818          -    0.00000      -     -   53s
+     0     0    0.00000    0  644          -    0.00000      -     -   54s
+     0     0    0.00000    0  384          -    0.00000      -     -  115s
+     0     0    0.00000    0  381          -    0.00000      -     -  116s
+     0     0    0.00000    0  413          -    0.00000      -     -  184s
+     0     0    0.00000    0  388          -    0.00000      -     -  185s
+     0     0    0.00000    0  639          -    0.00000      -     -  200s
+
+Cutting planes:
+  Implied bound: 7
+  Clique: 6
+  MIR: 9
+  Zero half: 25
+
+Explored 1 nodes (156457 simplex iterations) in 200.07 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 0.000000000000e+00, gap -
+
+    Variable            x 
+-------------------------
